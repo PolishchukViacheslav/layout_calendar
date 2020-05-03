@@ -20,6 +20,7 @@
     border: solid 1px black;
     margin-right: 1px;
     margin-bottom: 1px;
+    transition: background-color 500ms, transform 500ms;
   }
   &:nth-child(n+28) {
     display: none;
@@ -27,9 +28,7 @@
   & div:hover {
     cursor: pointer;
     background-color: pink;
-    position: relative;
-    top: -20px;
-    transition-duration: 500ms;
+    transform: translate(0, -20px);
   }
   @for $i from 1 through 31 {
     & :nth-child(#{$i}):before {
